@@ -1,33 +1,257 @@
-.App {
-  text-align: center;
+body {
+  margin: 0 5px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  list-style: none;
+}
+
+.header {
+  box-shadow: -1px 4px 8px 0px #c8d8dc;
+  height: 55px;
+  padding: 0 5px;
+  line-height: 55px;
+  border-radius: 7px;
+  max-width: 1224px;
+  margin: auto;
+}
+
+.nav_logo {
+  color: #3aa9b7;
+  font-weight: bold;
+}
+
+.product_list,
+.nav_links {
+  list-style: none;
+}
+
+.nav {
   display: flex;
+  justify-content: space-between;
+}
+
+.nav_links {
+  display: flex;
+  margin: 0;
+}
+
+.nav_links li {
+  margin: 0 10px;
+}
+
+.nav_links a {
+  color: rgb(197, 197, 197);
+}
+
+.nav_link:hover {
+  color: black;
+}
+
+.nav_link-basket {
+  position: relative;
+}
+
+.nav_link-basket span {
+  position: absolute;
+  top: -9px;
+  right: -5px;
+  color: #ff000073;
+}
+
+.main {
+  display: flex;
+  max-width: 1224px;
+  margin: auto;
+}
+
+.products h2 {
+  text-align: center;
+  color: #ff000059;
+  letter-spacing: 5px;
+  font-style: italic;
+}
+
+.product_title {
+  text-align: center;
+  color: #00000070;
+}
+
+.product_price {
+  color: #e83939bd;
+  font-style: italic;
+}
+
+.product_description {
+  color: #9c9c9c;
+  border-left: 3px solid #00ffa321;
+  padding-left: 5px;
+}
+
+.add_button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  border: none;
+  background: none;
+  padding: 5px;
+  font-size: 11px;
+  color: #63c8f6c4;
+  border: 1px solid #7f7f7f4f;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add_button:hover {
+  box-shadow: 0px 0px 6px 0px #b5afaf;
+  font-size: 12px;
+}
+
+.product {
+  position: relative;
+  margin: 10px 0;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #00e5ff4f;
+}
+
+.products {
+  box-shadow: 0px 3px 16px 6px #7d79794f;
+  border-radius: 7px;
+  margin-top: 10px;
+  padding: 0 10px 0 0;
+}
+
+.basket {
+  min-width: 200px;
+  display: flex;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 0 5px;
+  border-radius: 6px;
+  box-shadow: 0px 3px 16px 6px #7d79794f;
+  position: relative;
   flex-direction: column;
+  height: 460px;
+  overflow: hidden;
+}
+
+.amount_price {
+  position: absolute;
+  bottom: 10px;
+  right: 9px;
+  color: #f44336b0;
+  font-size: 18px;
+  font-style: italic;
+  border-bottom: 1px solid #03a9f43d;
+}
+
+.product_count {
+  position: absolute;
+  color: #5cd4cb;
+  right: 25px;
+}
+
+.close_basket {
+  position: absolute;
+  right: 0;
+  color: rgba(0, 0, 0, 0.466);
+  top: 3px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.close_basket:hover {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.952);
+}
+
+.basket_title {
+  text-align: center;
+  color: #00000070;
+}
+
+.basket_item_list {
+  margin: 0;
+  padding: 0 10px;
+}
+
+.basket_item {
+  position: relative;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-bottom: 1px solid #00000030;
+  border-left: 3px solid #1ab4c33d;
+  border-bottom-left-radius: 11px;
+  padding-left: 5px;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.basket_item h4 {
+  margin: 12px 21px 12px 0;
+  color: #848484;
+  font-style: italic;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.remove-item {
+  background: none;
+  border: 1px solid #a29999;
+  outline: none;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  border-radius: 5px;
+}
+
+.footer {
+  border-radius: 7px;
+  box-shadow: 0px -2px 13px #00000069;
+  display: flex;
+  margin-top: 15px;
+  padding: 0 10px;
+  justify-content: space-between;
+  max-width: 1224px;
+  margin: 20px auto 0 auto;
+}
+
+.footer .nav {
+  align-items: center;
+}
+
+.footer_numbers,
+.footer_emails {
+  list-style: none;
+  color: #3dd3d6;
+  font-style: italic;
+}
+
+@media (max-width: 720px) {
+  .main {
+    flex-direction: column;
+    width: 500px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 540px) {
+  .main {
+    width: 300px;
+  }
+
+  .add_button {
+    font-size: 8px;
+  }
+
+  .product_description {
+    font-size: 14px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
   }
 }
