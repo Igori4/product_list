@@ -1,1 +1,1 @@
-Demo http://myname.github.io/myapp ;
+Demo http://Igori4.github.io/product_list;
